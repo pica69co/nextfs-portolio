@@ -11,7 +11,7 @@ export default function Home() {
         The Future of AI in the next few years
       </h1>
       <p className={styles.desc}>
-        Turning your Idea into Reality. We bring together the teams from the global tech industry.
+       Turning your Idea into Reality. We bring together the teams from the global tech industry.
       </p>
       <Button url='/portfolio' text='See Our Works'/>
       </div>

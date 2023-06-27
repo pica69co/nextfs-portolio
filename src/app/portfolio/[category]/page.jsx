@@ -13,7 +13,6 @@ const getData = (cat) =>{
   return notFound()
 }
 
-
 const Category = ({params}) => {
   // console.log(params);
   const data = getData(params.category)
