@@ -13,6 +13,7 @@ const getData = (cat) =>{
   return notFound()
 }
 
+
 const Category = ({params}) => {
   // console.log(params);
   const data = getData(params.category)
@@ -31,7 +32,7 @@ const Category = ({params}) => {
           <Image
             className={styles.img}
             fill={true}
-            src={item.image} 
+            src={item.image}
              alt={item.title}
           />
         </div>

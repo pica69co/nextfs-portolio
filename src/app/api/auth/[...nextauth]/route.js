@@ -22,20 +22,20 @@ const handler = NextAuth({
             email: credentials.email,
           });
 
-           if (user) {
-             const isPasswordCorrect = await bcrypt.compare(
-               credentials.password,
-               user.password
-             );
+          if (user) {
+            const isPasswordCorrect = await bcrypt.compare(
+              credentials.password,
+              user.password
+            );
 
             if (isPasswordCorrect) {
               return user;
             } else {
               throw new Error("Wrong Credentials!");
             }
-           } else {
-             throw new Error("User not found!");
-           }
+          } else {
+            throw new Error("User not found!");
+          }
         } catch (err) {
           throw new Error(err);
         }
